@@ -217,7 +217,7 @@ function KillTmcSvc
 		try
 		{
 			Write-LogIt -Message "Attempting to Kill TMCSvc.exe"
-			$_.Terminate()
+			$_.Kill()
 			Write-LogIt -Message "TMCSvc.exe terminated. Multicast should no longer be hung."
 			
 		}
